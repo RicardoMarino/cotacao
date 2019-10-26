@@ -24,7 +24,7 @@ const port = process.env.PORT || 3000
 
 
 // Rotas:
-app.get('', (request, response) => {
+app.get('/', (request, response) => {
         response.render('index', {
             title: "Bem vindo ao sistema de cotações",
             author: "Ricardo Marino da Silva Oliveira"
