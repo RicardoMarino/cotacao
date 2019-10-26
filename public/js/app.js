@@ -27,7 +27,7 @@ cotacaoForm.addEventListener('submit', (event) => {
         mainH3.innerHTML = 'O ativo deve ser preenchido'
         return
     }
-    fetch(`http://localhost:3000/cotacoes?ativo=${ativo}`)
+    fetch(`/cotacoes?ativo=${ativo}`)
         .then((response) => {
             response.json().then((data) => {
                 if (data.error) {
