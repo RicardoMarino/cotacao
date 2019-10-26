@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="/img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{> header}}
+        <p>Index content</p>
+        
+        <form action="">
+            <input type="text" placeholder="Código do ativo">
+            <button>Buscar</button>
+        </form>
+        <h3></h3>
+        <dl>
+            <dt id="symbol"></dl>
+            <dd id="price_open"></dd>
+            <dd id="price"></dd>
+            <dd id="day_high"></dd>
+            <dd id="day_low"></dd>
+        </dd>
+
+    </div>
+    
+</body>
+{{> footer}}
+</html>
